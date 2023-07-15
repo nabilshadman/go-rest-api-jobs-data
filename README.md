@@ -1,16 +1,16 @@
-# Jobs REST API
-In this project, we develop A REST API with Go (or Golang) that performs CRUD (i.e., CREATE, READ, UPDATE AND DELETE) operations on jobs data saved on a PostgreSQL database.  
+# 1. Jobs REST API
+In this project, we develop A **REST API** with Go (or Golang) that performs **CRUD** (i.e., CREATE, READ, UPDATE AND DELETE) operations on jobs data saved on a PostgreSQL database.  
 
-Tech stack: Go, PostgreSQL, Postman  
+**Tech stack:** Go, PostgreSQL, Postman  
 
-The project consists of these qualities:
+The project consists of these **qualities**:  
 - We work with structs and slices to create our model and store and pass data around.  
 - We create a router to register our API endpoints and handler functions.
 - We make use of technologies such as the PostgreSQL database for persisting records, Postman for making API requests, third party packages such as gorilla/mux for routing, and other packages for loading environment variables, making http requests, encoding and decoding JSON, performing string conversions and checking types.
 - We refactor our code and create a modular file structure.
 
-# Set up environment
-To run the application on your local machine, set up your software environment following the steps below.  
+## 2. Set up Evironment
+To run the application on your local machine, set up your software environment first following the steps below.  
 
 (1) Install [Go](https://go.dev/doc/install)  
 
@@ -28,19 +28,21 @@ To run the application on your local machine, set up your software environment f
 -	Create a variable in your .env file called `ELEPHANTSQL_URL` and assign to it your database URL in quotes
 
 
-# Run application  
+## 3. Run Application  
+Follow the steps below to run the application.  
+
 (1) Type in command line:  
 `go build && ./jobs-list`    
 
 (2) Open your local browser:  
 Visit http://localhost:8000/jobs  
 
-Alternatively, you can open Postman (desktop agent) and send a GET request:  
+Alternatively, you can open **Postman** (desktop agent) and send a GET request:  
 `GET` http://localhost:8000/jobs  
 
 
-# Examples  
-We recommend using Postman to make requests to the REST API. Open Postman (desktop agent) in your browser and send a GET, POST, PUT, or DELETE request. We provide some examples below.  
+## 4. Examples  
+We **recommend** using Postman to make requests to the REST API. Open Postman (desktop agent) in your browser and send a **GET**, **POST**, **PUT**, or **DELETE** request. We provide some **examples** below.  
 
 To **CREATE** a new job:   
 `POST` http://localhost:8000/jobs  
