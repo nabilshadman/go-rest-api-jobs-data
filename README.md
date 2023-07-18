@@ -9,7 +9,7 @@ The project consists of these **qualities**:
 - We make use of technologies such as the PostgreSQL database for persisting records, Postman for making API requests, third party packages such as gorilla/mux for routing, and other packages for loading environment variables, making http requests, encoding and decoding JSON, performing string conversions and checking types.
 - We refactor our code and create a modular file structure.
 
-## 2. Set up Evironment
+# 2. Set up Evironment
 To run the application on your local machine, set up your software environment first following the steps below.  
 
 (1) Install [Go](https://go.dev/doc/install)  
@@ -28,7 +28,7 @@ To run the application on your local machine, set up your software environment f
 -	Create a variable in your .env file called `ELEPHANTSQL_URL` and assign to it your database URL in quotes
 
 
-## 3. Run Application  
+# 3. Run Application  
 Follow the steps below to run the application.  
 
 (1) Type in command line:  
@@ -41,7 +41,7 @@ Alternatively, you can open **Postman** (desktop agent) and send a GET request:
 `GET` http://localhost:8000/jobs  
 
 
-## 4. Examples  
+# 4. Examples  
 We **recommend** using Postman to make requests to the REST API. Open Postman (desktop agent) in your browser and send a **GET**, **POST**, **PUT**, or **DELETE** request. We provide some **examples** below.  
 
 To **CREATE** a new job:   
