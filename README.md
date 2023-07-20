@@ -1,7 +1,7 @@
 # 1. Jobs REST API
 In this project, we develop A **REST API** with Go (or Golang) that performs **CRUD** (i.e., CREATE, READ, UPDATE AND DELETE) operations on jobs data saved on a PostgreSQL database.  
 
-**Tech stack:** Go, PostgreSQL, Postman  
+**Tech Stack:** Go, PostgreSQL, Postman  
 
 The project consists of these **qualities**:  
 - We work with structs and slices to create our model and store and pass data around.  
@@ -10,7 +10,7 @@ The project consists of these **qualities**:
 - We refactor our code and create a modular file structure.
 
 # 2. Set up Evironment
-To run the application on your local machine, set up your software environment first following the steps below.  
+To run the application on your local machine, set up your **software** environment first following the steps below.  
 
 (1) Install [Go](https://go.dev/doc/install)  
 
@@ -29,7 +29,7 @@ To run the application on your local machine, set up your software environment f
 
 
 # 3. Run Application  
-Follow the steps below to run the application.  
+Follow the steps below to **run** the application.  
 
 (1) Type in command line:  
 `go build && ./jobs-list`    
