@@ -50,7 +50,7 @@ To **CREATE** a new job:
 Body:  
 {  
 &nbsp; &nbsp; &nbsp; &nbsp;“title”:”Software Engineer”,  
-&nbsp; &nbsp; &nbsp; &nbsp;“company”:”CloseAI”,  
+&nbsp; &nbsp; &nbsp; &nbsp;“company”:”LLM AI”,  
 &nbsp; &nbsp; &nbsp; &nbsp;”location”:”San Francisco, CA”,  
 &nbsp; &nbsp; &nbsp; &nbsp;“type”:”Full-time”  
 }    
@@ -70,7 +70,7 @@ Body:
 {  
 &nbsp; &nbsp; &nbsp; &nbsp;“id”:8,  
 &nbsp; &nbsp; &nbsp; &nbsp;“title”:”Machine Learning Engineer”,  
-&nbsp; &nbsp; &nbsp; &nbsp;“company”:”CloseAI”,  
+&nbsp; &nbsp; &nbsp; &nbsp;“company”:”LLM AI”,  
 &nbsp; &nbsp; &nbsp; &nbsp;”location”:”New York, NY”,  
 &nbsp; &nbsp; &nbsp; &nbsp;“type”:”Full-time”  
 }  
