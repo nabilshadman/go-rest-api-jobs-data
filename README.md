@@ -1,7 +1,7 @@
 # Jobs REST API
 In this project, we develop A **REST API** with Go (or Golang) that performs **CRUD** (i.e., CREATE, READ, UPDATE AND DELETE) operations on jobs data saved on a PostgreSQL database.  
 
-**Tech Stack:** Go, PostgreSQL, Postman  
+**Tech Stack:** Go, PostgreSQL, Postman.
 
 The project consists of these **qualities**:  
 - We work with structs and slices to create our model and store and pass data around.  
