@@ -1,5 +1,5 @@
 # Jobs REST API
-In this project, we develop A **REST API** with Go (or Golang) that performs **CRUD** (i.e., CREATE, READ, UPDATE AND DELETE) operations on jobs data saved on a PostgreSQL database.  
+In this project, we develop A **REST API** with Go (or Golang) that performs CRUD (i.e., CREATE, READ, UPDATE AND DELETE) operations on jobs data saved on a PostgreSQL database.  
 
 **Tech Stack:** Go, PostgreSQL, Postman.
 
@@ -9,7 +9,7 @@ The project consists of these **qualities**:
 - We make use of technologies such as the PostgreSQL database for persisting records, Postman for making API requests, third party packages such as gorilla/mux for routing, and other packages for loading environment variables, making http requests, encoding and decoding JSON, performing string conversions and checking types.
 - We refactor our code and create a modular file structure.
 
-# Set up Evironment
+## Environment Setup
 To run the application on your local machine, set up your **software** environment first following the steps below.  
 
 (1) Install [Go](https://go.dev/doc/install)  
@@ -28,55 +28,100 @@ To run the application on your local machine, set up your **software** environme
 -	Create a variable in your .env file called `ELEPHANTSQL_URL` and assign to it your database URL in quotes
 
 
-# Run Application  
-Follow the steps below to **run** the application.  
+## Run Application
 
-(1) Type in command line:  
-`go build && ./jobs-list`    
+To start and test the application:
 
-(2) Open your local browser:  
-Visit http://localhost:8000/jobs  
+### 1. Build and Run
 
-Alternatively, you can open **Postman** (desktop agent) and send a GET request:  
-`GET` http://localhost:8000/jobs  
+Launch the application by running the following command in your terminal:
+
+```bash
+go build && ./jobs-list
+```
+
+### 2. Access the API
+
+You can access the API in two ways:
+
+#### Browser
+Open your web browser and navigate to:
+```
+http://localhost:8000/jobs
+```
+
+#### Postman
+Alternatively, use Postman to send requests:
+```http
+GET http://localhost:8000/jobs
+```
+
+Note: The application runs on port 8000 by default. Make sure this port is available on your system.
 
 
-# Examples  
-We **recommend** using Postman to make requests to the REST API. Open Postman (desktop agent) in your browser and send a **GET**, **POST**, **PUT**, or **DELETE** request. We provide some **examples** below.  
+## Examples
 
-To **CREATE** a new job:   
-`POST` http://localhost:8000/jobs  
+We recommend using Postman to make requests to the REST API. You can use either the desktop agent or browser version to send GET, POST, PUT, or DELETE requests.
 
-Body:  
-{  
-&nbsp; &nbsp; &nbsp; &nbsp;“title”:”Software Engineer”,  
-&nbsp; &nbsp; &nbsp; &nbsp;“company”:”LLM AI”,  
-&nbsp; &nbsp; &nbsp; &nbsp;”location”:”San Francisco, CA”,  
-&nbsp; &nbsp; &nbsp; &nbsp;“type”:”Full-time”  
-}    
+### Create a Job
 
-Assume the “id” returned for the POST request is 8.  
+To create a new job posting:
 
-To **READ** all the jobs:  
-`GET` http://localhost:8000/jobs  
+```http
+POST http://localhost:8000/jobs
+```
 
-To **read** a specific job, specify its ID:  
-`GET` http://localhost:8000/jobs/1  
+Request body:
+```json
+{
+    "title": "Software Engineer",
+    "company": "LLM AI",
+    "location": "San Francisco, CA",
+    "type": "Full-time"
+}
+```
 
-To **UPDATE** the job created above:  
-`PUT` http://localhost:8000/jobs  
+The server will return a response containing the newly created job's ID (assumed to be 8 in subsequent examples).
 
-Body:  
-{  
-&nbsp; &nbsp; &nbsp; &nbsp;“id”:8,  
-&nbsp; &nbsp; &nbsp; &nbsp;“title”:”Machine Learning Engineer”,  
-&nbsp; &nbsp; &nbsp; &nbsp;“company”:”LLM AI”,  
-&nbsp; &nbsp; &nbsp; &nbsp;”location”:”New York, NY”,  
-&nbsp; &nbsp; &nbsp; &nbsp;“type”:”Full-time”  
-}  
+### Read Jobs
 
-To **DELETE** the job above:  
-`DELETE` http://localhost:8000/jobs/8  
+To retrieve all jobs:
 
-For more examples of using our API with Postman, view our [demo](https://github.com/nabilshadman/go-rest-api-jobs-list-postgres/tree/main/demo).  
+```http
+GET http://localhost:8000/jobs
+```
 
+To retrieve a specific job by ID:
+
+```http
+GET http://localhost:8000/jobs/1
+```
+
+### Update a Job
+
+To update an existing job:
+
+```http
+PUT http://localhost:8000/jobs
+```
+
+Request body:
+```json
+{
+    "id": 8,
+    "title": "Machine Learning Engineer",
+    "company": "LLM AI",
+    "location": "New York, NY",
+    "type": "Full-time"
+}
+```
+
+### Delete a Job
+
+To delete a job by ID:
+
+```http
+DELETE http://localhost:8000/jobs/8
+```
+
+For more detailed examples of using our API with Postman, check out our [demo](https://github.com/nabilshadman/go-rest-api-jobs-list-postgres/tree/main/demo).
