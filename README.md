@@ -6,34 +6,62 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
 ## Overview
-In this project, we develop A **REST API** with Go (or Golang) that performs CRUD (i.e., CREATE, READ, UPDATE AND DELETE) operations on jobs data saved on a PostgreSQL database.  
 
-**Tech Stack:** Go, PostgreSQL, Postman.
+This project implements a RESTful API using Go (Golang) that manages job-related data through CRUD (Create, Read, Update, Delete) operations with PostgreSQL as the backend database. 
 
-The project consists of these **qualities**:  
-- We work with structs and slices to create our model and store and pass data around.  
-- We create a router to register our API endpoints and handler functions.
-- We make use of technologies such as the PostgreSQL database for persisting records, Postman for making API requests, third party packages such as gorilla/mux for routing, and other packages for loading environment variables, making http requests, encoding and decoding JSON, performing string conversions and checking types.
-- We refactor our code and create a modular file structure.
+### Key Features
+- Data modeling using Go structs and slices for efficient data manipulation
+- API endpoint routing and handler function implementation
+- Modular and maintainable code architecture
+- Integration with PostgreSQL for persistent data storage
+
+### Technical Implementation
+The API leverages several key technologies and packages:
+- gorilla/mux for robust routing capabilities
+- Environment variable management
+- HTTP request handling
+- JSON encoding/decoding
+- Type checking and string conversion utilities
+
+### Tech Stack
+- Go (Golang)
+- PostgreSQL
+- Postman (API testing)
+
+This REST API serves as a practical demonstration of building scalable web services with Go while following best practices in API design and database integration.
 
 ## Environment Setup
-To run the application on your local machine, set up your **software** environment first following the steps below.  
 
-(1) Install [Go](https://go.dev/doc/install)  
+### Prerequisites
+1. **Go (Golang)**
+   - Download and install from [Go's official website](https://go.dev/doc/install)
 
-(2) Install Go third party packages  
--	Get [gorilla/mux](https://github.com/gorilla/mux)
--	Get [gotenv](https://github.com/subosito/gotenv)
--	Get [pq](https://github.com/lib/pq)
+2. **Required Go Packages**
+   ```bash
+   go get github.com/gorilla/mux      # HTTP router and URL matcher
+   go get github.com/subosito/gotenv  # Environment variable loader
+   go get github.com/lib/pq           # PostgreSQL driver
+   ```
 
-(3) Get [Postman](https://www.postman.com/) desktop agent  
+3. **Postman**
+   - Install [Postman](https://www.postman.com/) for API testing and development
 
-(4) Get [ElephantSQL](https://www.elephantsql.com/)  
--	Set up a (free) database instance
--	Create a new table in your instance called `jobs` with PostgreSQL syntax
--	Create a `.env` file in your project folder
--	Create a variable in your .env file called `ELEPHANTSQL_URL` and assign to it your database URL in quotes
+4. **Database Setup**
+   - Create a free database instance on [ElephantSQL](https://www.elephantsql.com/)
+   - Execute the following SQL to create the jobs table:
+     ```sql
+     CREATE TABLE jobs (
+         # Table schema here
+     );
+     ```
 
+### Configuration
+Create a `.env` file in your project root with the following:
+```env
+ELEPHANTSQL_URL="your_database_url_here"
+```
+
+With these components in place, you'll have a complete development environment for running and testing the API.
 
 ## Run Application
 
