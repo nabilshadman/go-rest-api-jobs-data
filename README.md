@@ -125,3 +125,25 @@ DELETE http://localhost:8000/jobs/8
 ```
 
 For more detailed examples of using our API with Postman, check out our [demo](https://github.com/nabilshadman/go-rest-api-jobs-list-postgres/tree/main/demo).
+
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE.txt) file for details.
+
+## Citation  
+If you use this work in your research, please cite:  
+
+```bibtex  
+@misc{jobs-rest-api,
+  author = {Shadman, Nabil},
+  title = {Jobs REST API with Go and PostgreSQL},
+  year = {2021},
+  publisher = {GitHub},
+  url = {https://github.com/nabilshadman/go-rest-api-jobs-list-postgres}
+}
+```
