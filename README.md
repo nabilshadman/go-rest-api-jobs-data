@@ -1,4 +1,11 @@
 # Jobs REST API
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=flat&logo=go&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+
+## Overview
 In this project, we develop A **REST API** with Go (or Golang) that performs CRUD (i.e., CREATE, READ, UPDATE AND DELETE) operations on jobs data saved on a PostgreSQL database.  
 
 **Tech Stack:** Go, PostgreSQL, Postman.
