@@ -166,59 +166,48 @@ For more detailed examples of using our API with Postman, check out our [demo](h
 
 Visual walkthrough of the API's core functionality:
 
-<table>
+<table width="100%">
 <tr>
-  <td width="50%">
-    <img src="./demo/0_jobs-list_server_running.jpg" width="400" alt="Server Running"/><br/>
-    <em>1. Server running on localhost:8000</em>
-  </td>
-  <td width="50%">
-    <img src="./demo/1_jobs-list_getjobs.jpg" width="400" alt="Get All Jobs"/><br/>
-    <em>2. GET /jobs - Retrieving all jobs</em>
-  </td>
+<td width="50%"><strong>1. Server running on localhost:8000</strong></td>
+<td width="50%"><strong>2. GET /jobs - Retrieving all jobs</strong></td>
 </tr>
 <tr>
-  <td width="50%">
-    <img src="./demo/2_jobs-list_getjob.jpg" width="400" alt="Get Single Job"/><br/>
-    <em>3. GET /jobs/{id} - Retrieving specific job</em>
-  </td>
-  <td width="50%">
-    <img src="./demo/3_jobs-list_addjob_0.jpg" width="400" alt="Add Job Request"/><br/>
-    <em>4. POST /jobs - Creating new job</em>
-  </td>
+<td><img src="./demo/0_jobs-list_server_running.jpg" width="100%"></td>
+<td><img src="./demo/1_jobs-list_getjobs.jpg" width="100%"></td>
 </tr>
 <tr>
-  <td width="50%">
-    <img src="./demo/4_jobs-list_addjob_1.jpg" width="400" alt="Add Job Response"/><br/>
-    <em>5. Server response for job creation</em>
-  </td>
-  <td width="50%">
-    <img src="./demo/5_jobs-list_updatejob_0.jpg" width="400" alt="Update Job Request"/><br/>
-    <em>6. PUT /jobs - Updating existing job</em>
-  </td>
+<td><strong>3. GET /jobs/{id} - Retrieving specific job</strong></td>
+<td><strong>4. POST /jobs - Creating new job</strong></td>
 </tr>
 <tr>
-  <td width="50%">
-    <img src="./demo/6_jobs-list_updatejob_1.jpg" width="400" alt="Update Job Response"/><br/>
-    <em>7. Server response for job update</em>
-  </td>
-  <td width="50%">
-    <img src="./demo/7_jobs-list_removejob_0.jpg" width="400" alt="Delete Job Request"/><br/>
-    <em>8. DELETE /jobs/{id} - Removing job</em>
-  </td>
+<td><img src="./demo/2_jobs-list_getjob.jpg" width="100%"></td>
+<td><img src="./demo/3_jobs-list_addjob_0.jpg" width="100%"></td>
 </tr>
 <tr>
-  <td width="50%">
-    <img src="./demo/8_jobs-list_removejob_1.jpg" width="400" alt="Delete Job Response"/><br/>
-    <em>9. Server response for job deletion</em>
-  </td>
-  <td width="50%">
-    <img src="./demo/9_jobs-list_postgres_latest_state.jpg" width="400" alt="Database State"/><br/>
-    <em>10. Final PostgreSQL database state</em>
-  </td>
+<td><strong>5. Server response for job creation</strong></td>
+<td><strong>6. PUT /jobs - Updating existing job</strong></td>
+</tr>
+<tr>
+<td><img src="./demo/4_jobs-list_addjob_1.jpg" width="100%"></td>
+<td><img src="./demo/5_jobs-list_updatejob_0.jpg" width="100%"></td>
+</tr>
+<tr>
+<td><strong>7. Server response for job update</strong></td>
+<td><strong>8. DELETE /jobs/{id} - Removing job</strong></td>
+</tr>
+<tr>
+<td><img src="./demo/6_jobs-list_updatejob_1.jpg" width="100%"></td>
+<td><img src="./demo/7_jobs-list_removejob_0.jpg" width="100%"></td>
+</tr>
+<tr>
+<td><strong>9. Server response for job deletion</strong></td>
+<td><strong>10. Final PostgreSQL database state</strong></td>
+</tr>
+<tr>
+<td><img src="./demo/8_jobs-list_removejob_1.jpg" width="100%"></td>
+<td><img src="./demo/9_jobs-list_postgres_latest_state.jpg" width="100%"></td>
 </tr>
 </table>
-
 
 ## Contributing
 
