@@ -227,6 +227,6 @@ If you use this work in your research, please cite:
   title = {JobAPI: Go-Powered REST Service},
   year = {2021},
   publisher = {GitHub},
-  url = {https://github.com/nabilshadman/go-rest-api-jobs-list-postgres}
+  url = {https://github.com/nabilshadman/go-rest-api-jobs-data}
 }
 ```
