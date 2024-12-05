@@ -162,6 +162,64 @@ DELETE http://localhost:8000/jobs/8
 For more detailed examples of using our API with Postman, check out our [demo](https://github.com/nabilshadman/go-rest-api-jobs-list-postgres/tree/main/demo).
 
 
+## Screenshots
+
+Visual walkthrough of the API's core functionality:
+
+<table>
+<tr>
+  <td width="50%">
+    <img src="./demo/0_jobs-list_server_running.jpg" width="400" alt="Server Running"/><br/>
+    <em>1. Server running on localhost:8000</em>
+  </td>
+  <td width="50%">
+    <img src="./demo/1_jobs-list_getjobs.jpg" width="400" alt="Get All Jobs"/><br/>
+    <em>2. GET /jobs - Retrieving all jobs</em>
+  </td>
+</tr>
+<tr>
+  <td width="50%">
+    <img src="./demo/2_jobs-list_getjob.jpg" width="400" alt="Get Single Job"/><br/>
+    <em>3. GET /jobs/{id} - Retrieving specific job</em>
+  </td>
+  <td width="50%">
+    <img src="./demo/3_jobs-list_addjob_0.jpg" width="400" alt="Add Job Request"/><br/>
+    <em>4. POST /jobs - Creating new job</em>
+  </td>
+</tr>
+<tr>
+  <td width="50%">
+    <img src="./demo/4_jobs-list_addjob_1.jpg" width="400" alt="Add Job Response"/><br/>
+    <em>5. Server response for job creation</em>
+  </td>
+  <td width="50%">
+    <img src="./demo/5_jobs-list_updatejob_0.jpg" width="400" alt="Update Job Request"/><br/>
+    <em>6. PUT /jobs - Updating existing job</em>
+  </td>
+</tr>
+<tr>
+  <td width="50%">
+    <img src="./demo/6_jobs-list_updatejob_1.jpg" width="400" alt="Update Job Response"/><br/>
+    <em>7. Server response for job update</em>
+  </td>
+  <td width="50%">
+    <img src="./demo/7_jobs-list_removejob_0.jpg" width="400" alt="Delete Job Request"/><br/>
+    <em>8. DELETE /jobs/{id} - Removing job</em>
+  </td>
+</tr>
+<tr>
+  <td width="50%">
+    <img src="./demo/8_jobs-list_removejob_1.jpg" width="400" alt="Delete Job Response"/><br/>
+    <em>9. Server response for job deletion</em>
+  </td>
+  <td width="50%">
+    <img src="./demo/9_jobs-list_postgres_latest_state.jpg" width="400" alt="Database State"/><br/>
+    <em>10. Final PostgreSQL database state</em>
+  </td>
+</tr>
+</table>
+
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
