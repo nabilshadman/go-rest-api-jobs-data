@@ -1,4 +1,5 @@
-# Jobs REST API
+# JobAPI: Go-Powered REST Service
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=flat&logo=go&logoColor=white)
@@ -7,7 +8,7 @@
 
 ## Overview
 
-This project implements a RESTful API using Go (Golang) that manages job-related data through CRUD (Create, Read, Update, Delete) operations with PostgreSQL as the backend database. 
+JobAPI is a high-performance REST service built with Go (Golang) that provides comprehensive job management capabilities. The service offers streamlined CRUD operations (Create, Read, Update, Delete) for job listings, leveraging PostgreSQL for robust data persistence and Go's powerful concurrency features for efficient request handling.
 
 ### Key Features
 - Data modeling using Go structs and slices for efficient data manipulation
@@ -221,9 +222,9 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE.txt)
 If you use this work in your research, please cite:  
 
 ```bibtex  
-@misc{jobs-rest-api,
+@misc{job-api-go,
   author = {Shadman, Nabil},
-  title = {Jobs REST API with Go and PostgreSQL},
+  title = {JobAPI: Go-Powered REST Service},
   year = {2021},
   publisher = {GitHub},
   url = {https://github.com/nabilshadman/go-rest-api-jobs-list-postgres}
